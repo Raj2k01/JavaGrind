@@ -1,0 +1,24 @@
+package project1;
+
+import java.util.Scanner;
+
+public class MultipleUserInput {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter any number");
+		int num= sc.nextInt();
+		int arr[]=new int[num];
+
+		System.out.print("Enter " +num+ " Numbers: ");
+	      for(int i=0; i<num; i++)
+	         arr[i] = sc.nextInt();
+	      
+	      System.out.println("\nYou've entered: ");
+	      for(int i=0; i<num; i++)
+	         System.out.print(arr[i]+ " ");
+
+	}
+
+}
