@@ -1,0 +1,20 @@
+package project1;
+
+import java.util.Scanner;
+
+public class FloatAdditionUsingFunction {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first number");
+		Float a= sc.nextFloat();
+		System.out.println("Enter the second number");
+		Float b=sc.nextFloat();
+		System.out.println("Result "+add(a, b));
+	}
+	public static float add(float x,float y)
+  {
+		return (x+y);
+	}
+
+}
