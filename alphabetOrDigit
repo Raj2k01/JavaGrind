@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class alphabetOrDigit {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter an alphabet or a digit");
+        char a=sc.next().charAt(0);
+        System.out.println("o/p "+a);
+        if((a>='A'&&a<='Z')||(a>='a'&&a<='z'))
+        {
+            System.out.println("It is alphabet");
+        }
+        else if(a>='0'&&a<='9'){
+            System.out.println("It is digit");
+        }
+        else
+        {
+            System.out.println("Enter a valid input");
+        }
+    }
+}
